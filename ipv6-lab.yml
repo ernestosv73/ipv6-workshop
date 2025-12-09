@@ -44,9 +44,9 @@ topology:
 
     ceos:
       kind: paloalto_panos
-      image: boxen_paloalto_panos:11.0.0
+      #image: boxen_paloalto_panos:11.0.0
       ports:
-        - 80:80
+        #- 80:80
         - 443:443
 
   ### CLIENTS AND SERVERS ###
