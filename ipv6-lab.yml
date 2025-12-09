@@ -82,6 +82,7 @@ topology:
 
     Server:
       kind: linux
+      image: ghcr.io/hellt/network-multitool
       binds:
         - configs/server.sh:/root/server.sh
         - configs/web-server.html:/var/www/localhost/htdocs/index.html
