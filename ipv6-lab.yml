@@ -44,6 +44,7 @@ topology:
 
     ceos:
       kind: paloalto_panos
+      image: boxen_paloalto_panos:11.0.0
       ports:
         - 80:80
         - 443:443
@@ -101,7 +102,8 @@ topology:
 
   links:
     - endpoints: ["Rbackbone:e1-1", "R1:eth1"]
-    - endpoints: ["Rbackbone:e1-2", "R2:eth1"]
+    - endpoints: ["Rbackbone:e1-2", "ceos:eth1"]
+    - endpoints: ["ceos:eth2", "R2:eth1"]
     - endpoints: ["Rbackbone:e1-3", "R3:e1-1"]
     - endpoints: ["Rbackbone:e1-4", "Server:eth1"]
     - endpoints: ["R1:eth2", "C1:eth1"]
