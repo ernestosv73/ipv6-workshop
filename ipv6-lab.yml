@@ -5,8 +5,8 @@ topology:
   kinds: 
 
     srl:
-      image: ghcr.io/nokia/srlinux:23.10.1
-      type: ixrd2l
+      image: ghcr.io/nokia/srlinux:24.10.1
+      type: ixrd3
 
     #linux:
       #image: ghcr.io/hellt/network-multitool
@@ -17,7 +17,7 @@ topology:
 
     Rbackbone:
       kind: srl
-      startup-config: configs/Rbackbone.json
+      #startup-config: configs/Rbackbone.json
 
     R1:
       kind: linux
@@ -40,10 +40,13 @@ topology:
 
     R3:
       kind: srl
-      startup-config: configs/R3.json
+      #startup-config: configs/R3.json
 
-
-
+    ceos:
+      kind: paloalto_panos
+      ports:
+        - 80:80
+        - 443:443
 
   ### CLIENTS AND SERVERS ###
 
