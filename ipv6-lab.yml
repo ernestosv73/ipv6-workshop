@@ -44,7 +44,7 @@ topology:
 
     palo:
       kind: paloalto_panos
-      image: vrnetlab/paloalto_pa-vm:10.1.0
+      image: vrnetlab/vr-pan:10.1.0
       #ports:
         #- 80:80
          #- 443:443
