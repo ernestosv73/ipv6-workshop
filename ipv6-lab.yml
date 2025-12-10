@@ -47,7 +47,7 @@ topology:
       image: vrnetlab/paloalto_pa-vm:10.1.0 
       ports:
         #- 80:80
-        - 443:443
+        - 4443:443
 
   ### CLIENTS AND SERVERS ###
 
