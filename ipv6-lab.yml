@@ -102,8 +102,8 @@ topology:
 
   links:
     - endpoints: ["Rbackbone:e1-1", "R1:eth1"]
-    - endpoints: ["Rbackbone:e1-2", "palo:eth1"]
-    - endpoints: ["palo:eth2", "R2:eth1"]
+    - endpoints: ["Rbackbone:e1-2", "palo:Ethernet1/1"]
+    - endpoints: ["palo:Ethernet1/2", "R2:eth1"]
     - endpoints: ["Rbackbone:e1-3", "R3:e1-1"]
     - endpoints: ["Rbackbone:e1-4", "Server:eth1"]
     - endpoints: ["R1:eth2", "C1:eth1"]
